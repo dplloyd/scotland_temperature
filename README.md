@@ -5,8 +5,8 @@ Visualising the change in mean air temperature in Scotland between 1884 and 2018
 shows the number of standard deviations the year's mean temperature is away from from a reference temperature (blue for below, so generally cooler, 
 and red for above, generally hotter). The reference temperature and standard deviations are calculated on the years spanning 1971-2000.
 
-The code is <b>heavily</b> based on this 
-[R-bloggers post](https://www.r-bloggers.com/temperature-changes-in-germany-visualized-in-r/) visualising temperature changes 
+The code is <b>heavily</b> based on Jan Knappe's
+[R-bloggers post](https://www.r-bloggers.com/temperature-changes-in-germany-visualized-in-r/) (the original article can be read [here](https://www.janknappe.com/blog/r-temperature-changes-germany/)) visualising temperature changes 
 in Germany. My plot looks almost identical to theirs, and therefore all credit is directed to the original author!
 
 I used climate data downloaded from the [Centre for Envronmental Data Analysis](http://data.ceda.ac.uk/badc/ukmo-hadobs/data/insitu/MOHC/HadOBS/HadUK-Grid/v1.0.0.0/country/tas/ann/v20181126).
@@ -25,5 +25,7 @@ to this. This had been my original intention, but my computer struggled with the
 `clim = c(-2.6,2.6)` resulted in the few maps outwith this range appearing gray, not the top/bottom red and blue reference
 colours.
 
-
 As I'm in the process of learning R, there are undoubtedly lots of ways this can be improved. 
+
+![Final montage](Scotland_variation_of_temp_1884-2018_final.png)
+
